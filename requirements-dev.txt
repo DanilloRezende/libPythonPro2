@@ -1,4 +1,9 @@
+flake8==5.0.4
+mccabe==0.7.0
+pycodestyle==2.9.1
+pyflakes==2.5.0
 
+#Deps do pytest
 iniconfig == 1.1.1
 pyparsing ==3.0.9
 pluggy ==1.0.0
@@ -6,9 +11,10 @@ colorama ==0.4.6
 attrs ==22.1.0
 packaging ==21.3
 pytest==7.2.0
-flake8==5.0.4
-mccabe==0.7.0
-pycodestyle==2.9.1
-pyflakes==2.5.0
+
+#Covarage
+coverage==6.5.0
+pytest-cov==4.0.0
+
 -r requirements.txt
 

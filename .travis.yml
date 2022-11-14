@@ -2,7 +2,7 @@ language: python
 python:
   - 3.11
 install:
-  - pip install -q -r requirements-dev.txt
+  - pip install -q -r requirements-dev.txt codecov
 script:
   - flake8
-  - pytest libpythonpro2
+  - pytest libpythonpro2 --cov=libpythonpro2
