@@ -5,4 +5,7 @@ Nesse curso é ensinado como contribuir com projetos de código aberto.
 
 Link para o curso [Python Pro](https://python.pro/)
 
-1> Pip
+Tópicos a serem abordados:
+1. Git
+2. VirtualEnv
+3. Pip
