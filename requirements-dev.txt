@@ -12,6 +12,9 @@ attrs ==22.1.0
 packaging ==21.3
 pytest==7.2.0
 
+#Dep Pytest-Mock
+pytest-mock==3.10.0
+
 #Covarage
 coverage==6.5.0
 pytest-cov==4.0.0

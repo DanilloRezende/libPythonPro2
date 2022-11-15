@@ -5,7 +5,7 @@ import pytest
 from libpythonpro2 import github_api
 
 @pytest.fixture
-def avatar_url():
+def avatar_url(mocker):
     resp_mock = Mock()
     url = 'https://avatars.githubusercontent.com/u/81938166?v=4'
     resp_mock.json.return_value = {
@@ -13,10 +13,9 @@ def avatar_url():
         "id": 81938166,
         "avatar_url": url
     }
-    get_origianl = github_api.requests.get
-    github_api.requests.get = Mock(return_value=resp_mock)
-    yield url
-    github_api.requests.get = get_origianl
+    get_mock=mocker.patch('libpythonpro2.github_api.requests.get')
+    get_mock.return_value=resp_mock
+    return url
 
 def test_buscar_avatar(avatar_url):
     url=github_api.buscar_avatar('DanilloRezende')
