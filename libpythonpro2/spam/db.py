@@ -18,6 +18,8 @@ class Sessao:
 
 
 class Conexao:
+
+
     def gerar_sessao(self):
         return Sessao()
 
